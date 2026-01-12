@@ -1,0 +1,21 @@
+name: Test Action with Email
+
+on:
+  workflow_dispatch: # Allows manual triggering
+  push:
+    branches: 
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps: 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: 23f2004201@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+      
+      - name: Complete
+        run: echo "Action completed successfully!"
